@@ -1,0 +1,294 @@
+<h1><u>CHAPTER 7: FORMS</u></h1>
+
+<h2>Form Structure: Text Input</h2>
+<form action="#" method="get">
+    <p>Username
+        <input maxlength="30" name="username" size="15" type="text"/>
+    </p>
+</form>
+<hr/>
+
+<h2>Form Structure: Password Input</h2>
+<form action="#" method="get">
+    <p>Username:
+        <input maxlength="30" name="username" size="15" type="text">
+    </p>
+    <p>
+        Password:
+        <input maxlength="30" name="password" size="15" type="password">
+    </p>
+</form>
+<hr/>
+
+<h2>Form Structure: Text Area</h2>
+<form action="">
+    <p>What did you think of this gig?</p>
+    <textarea name="comments" placeholder="Enter your comments..."></textarea>
+</form>
+<hr/>
+
+<h2>Radio Button</h2>
+<form action="#">
+    <p>Please select your favorite genre:
+        <br/>
+        <input checked="checked" name="genre" type="radio" value="rock"/> Rock
+        <input name="genre" type="radio" value="pop"/> Pop
+        <input name="genre" type="radio" value="jazz"/> Jazz
+    </p>
+</form>
+
+<h2>Checkbox</h2>
+<form action="#">
+    <p>Please select your favorite music service(s):
+        <br/>
+        <input checked="checked" name="service" type="checkbox" value="itunes"/> iTunes
+        <input name="service" type="checkbox" value="spotify"/> Spotify
+        <input name="service" type="checkbox" value="lastfm"/> Last.fm
+    </p>
+</form>
+<hr/>
+
+<h2>Drop Down List Box</h2>
+<form action="#">
+    <p>What device do you listen to music on?</p>
+    <select name="devices">
+        <option value="ipod">iPod</option>
+        <option value="radio">Radio</option>
+        <option value="computer">Computer</option>
+        <option value="computer">Phone</option>
+    </select>
+</form>
+<hr/>
+
+<h2>Multiple Select Box</h2>
+<form action="#">
+    <p>Do you play any of the following instruments? You can select more than one option by holding down
+        control on a PC or command key on a Mac while selecting different options).</p>
+    <select multiple="multiple" name="intruments" size="5">
+        <option selected="selected" value="guitar"> Guitar</option>
+        <option value="drums"> Drums</option>
+        <option value="piano"> Piano</option>
+        <option value="bass"> Bass</option>
+    </select>
+</form>
+<hr/>
+
+<h2>File Input Box</h2>
+<form action="" method="post">
+    <p>Upload your song in MP# format:</p>
+    <input name="user-song" type="file"/><br/>
+    <input type="submit" value="Upload"/>
+</form>
+<hr/>
+
+<h2>Submit Button</h2>
+<form action="#">
+    <p>Subscribe to our email list:</p>
+    <input name="email" type="text"/>
+    <input name="subscribe" type="submit" value="Subscribe"/>
+</form>
+<hr/>
+
+<h2>Image Button</h2>
+<form action="">
+    <p>Subscribe to our email list:</p>
+    <input name="email" type="text"/>
+    <input src="images/subscribe.jpg" type="image">
+</form>
+<hr/>
+
+<h2>Button & Hidden Controls</h2>
+<form action="">
+    <button>
+        <img alt="add" src="images/add.gif"> Add
+    </button>
+    <input name="bookmark" type="hidden" value="lyrics">
+</form>
+<hr/>
+
+<h2>Labelling Form Controls</h2>
+<labe>Age: <input name="age" type="text"></labe>
+<br/>
+Gender:
+<input id="female" name="gender" type="radio" value="f">
+<label for="female">Female</label>
+<input id="male" name="gender" type="radio" value="m">
+<label for="male">Male</label>
+<hr/>
+
+<h2>Grouping Form Elements</h2>
+<fieldset>
+    <legend>Contact Details</legend>
+    <label>Email: <br/>
+        <input name="email" type="text"/>
+    </label><br/>
+    <label>
+        Mobile: <br/>
+        <input name="mobile" type="text"/>
+    </label><br/>
+    <label>
+        Telephone: <br/>
+        <input name="telephone" type="text"/>
+    </label>
+</fieldset>
+<hr/>
+
+<h2>HTML5: Form Validation</h2>
+<form action="http://www.example.com/login/"
+      method="post">
+    <label for="username">Username:</label>
+    <input name="username" required="required"
+           type="text"/><br/>
+    <label for="password">Password:</label>
+    <input name="password" required="required"
+           type="password"/>
+    <input type="submit" value="Submit"/>
+</form>
+<hr/>
+
+<h2>HTML5: Date Input</h2>
+<form action="#" method="post">
+    <label for="username">Departure date:</label>
+    <input name="depart" type="date"/>
+    <input type="submit" value="Submit"/>
+</form>
+<hr/>
+
+<h2>HTML5: Email & URL Input</h2>
+<form action="#">
+    <p>Please enter your email address:</p>
+    <input name="email" placeholder="example@email.com" type="email"/>
+    <input type="submit" value="Submit"/>
+</form>
+<hr/>
+
+<form action="#">
+    <p>Please enter your website address:</p>
+    <input name="url" placeholder="http://..." type="url"/>
+    <input type="submit" value="Submit"/>
+</form>
+<hr/>
+
+<h2>HTML5: Search Input</h2>
+<form action="#">
+    <p>Search:</p>
+    <input name="search" placeholder="Search" type="search"/>
+    <input type="submit" value="Submit">
+</form>
+<hr/>
+
+<h2>EXAMPLE (My example)</h2>
+<fieldset>
+    <legend>Your Details:</legend>
+    <label>Name:
+        <input name="name" type="text"/>
+    </label>
+    <br/>
+    <label>
+        Email:
+        <input name="email" type="email"/>
+    </label>
+</fieldset>
+
+<br/>
+
+<fieldset>
+    <legend>Your Review:</legend>
+    <p>How did you hear about us?
+        <select name="find-us" size="1">
+            <option value="google">Google</option>
+            <option value="bing">Bing</option>
+            <option value="yahoo">Yahoo</option>
+        </select>
+    </p>
+
+    <form action="">
+        <p>Would you visit us again?</p>
+        <input checked="checked" type="radio" value="yes"/> Yes
+        <input type="radio" value="no"/> No
+        <input type="radio" value="maybe"/> Maybe
+        <br/>
+    </form>
+
+    <textarea name="comments" placeholder="Comments..."></textarea>
+    <br/>
+
+    <input checked="checked" name="signup" type="checkbox"> Sign me up for email updates
+    <br/>
+
+    <input type="submit" value="Submit">
+</fieldset>
+
+<br />
+
+<html>
+<head>
+    <h2>Example (Book Example)</h2>
+</head>
+<body>
+<form action="http://www.example.com/review.php" method="get">
+    <fieldset>
+        <legend>
+            Your Details:
+        </legend>
+        <label>
+            Name:
+            <input maxlength="100" name="name" size="30" type="text">
+        </label>
+        <br/>
+        <label>
+            Email:
+            <input maxlength="100" name="email" size="30" type="email">
+        </label>
+        <br/>
+    </fieldset>
+    <br/>
+    <fieldset>
+        <legend>
+            Your Review:
+        </legend>
+        <p>
+            <label for="hear-about">
+                How did you hear about us?
+            </label>
+            <select id="hear-about" name="referrer">
+                <option value="google">Google</option>
+                <option value="friend">Friend</option>
+                <option value="advert">Advert</option>
+                <option value="other">Other</option>
+            </select>
+        </p>
+        <p>
+            Would you visit again?
+            <br/>
+            <label>
+                <input name="rating" type="radio" value="yes"/>
+                Yes
+            </label>
+            <label>
+                <input name="rating" type="radio" value="no"/>
+                No
+            </label>
+            <label>
+                <input name="rating" type="radio" value="maybe"/>
+                Maybe
+            </label>
+        </p>
+        <p>
+            <label for="comments">
+                Comments:
+            </label>
+            <br/>
+            <textarea cols="40" id="comments" rows="4">
+</textarea>
+        </p>
+        <label>
+            <input checked="checked" name="subscribe" type="checkbox"/>
+            Sign me up for email updates
+        </label>
+        <br/>
+        <input type="submit" value="Submit review"/>
+    </fieldset>
+</form>
+</body>
+</html>

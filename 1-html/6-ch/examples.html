@@ -1,0 +1,213 @@
+<h1><i>CHAPTER 6: TABLES</i></h1>
+
+<h2>Basic Table Structure</h2>
+<table>
+    <tr>
+        <td>15</td>
+        <td>15</td>
+        <td>30</td>
+    </tr>
+    <tr>
+        <td>45</td>
+        <td>60</td>
+        <td>45</td>
+    </tr>
+    <tr>
+        <td>60</td>
+        <td>90</td>
+        <td>90</td>
+    </tr>
+</table>
+<hr/>
+
+<h2>Table Headings</h2>
+<table>
+    <tr>
+        <th></th>
+        <th scope="col">Saturday</th>
+        <th scope="col">Sunday</th>
+    </tr>
+    <tr>
+        <th scope="row">Tickets Sold:</th>
+        <td>120</td>
+        <td>135</td>
+    </tr>
+    <tr>
+        <th scope="row">Total Sales:</th>
+        <td>$600</td>
+        <td>$675</td>
+    </tr>
+</table>
+<hr/>
+
+<h2>Spanning Columns</h2>
+<table>
+    <tr>
+        <th></th>
+        <th scope="col">9am</th>
+        <th scope="col">10am</th>
+        <th scope="col">11am</th>
+        <th scope="col">12pm</th>
+    </tr>
+    <tr>
+        <th scope="row">Monday</th>
+        <td colspan="2">Geography</td>
+        <td>Math</td>
+        <td>Art</td>
+    </tr>
+    <tr>
+        <th scope="row">Tuesday</th>
+        <td colspan="3">Gym</td>
+        <td>Home Ec</td>
+    </tr>
+</table>
+<hr/>
+
+<h2>Spanning Rows</h2>
+<table>
+    <tr>
+        <th></th>
+        <th scope="col">ABC</th>
+        <th scope="col">BBB</th>
+        <th scope="col">CNN</th>
+    </tr>
+    <tr>
+        <th scope="row">6pm - 7pm</th>
+        <td rowspan="2"> Movie</td>
+        <td>Comedy</td>
+        <td>News</td>
+    </tr>
+    <tr>
+        <th scope="row">7pm - 8pm</th>
+        <td>Sport</td>
+        <td>Current Affairs</td>
+    </tr>
+</table>
+<hr/>
+
+<h2>Long Tables</h2>
+<table>
+    <thead>
+    <tr>
+        <th>Date</th>
+        <th>Income</th>
+        <th>Expenditure</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th>1st January</th>
+        <td>250</td>
+        <td>36</td>
+    </tr>
+    <tr>
+        <th>2nd January</th>
+        <td>285</td>
+        <td>48</td>
+    </tr>
+    <tr>
+        <th>3rd January</th>
+        <td>260</td>
+        <td>42</td>
+    </tr>
+    <tr>
+        <th>3rd January</th>
+        <td>260</td>
+        <td>42</td>
+    </tr>
+    <tr>
+        <th>3rd January</th>
+        <td>260</td>
+        <td>42</td>
+    </tr>
+    <tr>
+        <th>3rd January</th>
+        <td>260</td>
+        <td>42</td>
+    </tr>
+    <tr>
+        <th>3rd January</th>
+        <td>260</td>
+        <td>42</td>
+    </tr>
+    <tr>
+        <th>3rd January</th>
+        <td>260</td>
+        <td>42</td>
+    </tr>
+    <tr>
+        <th>31st January</th>
+        <td>129</td>
+        <td>64</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td></td>
+        <td>7824</td>
+        <td>1241</td>
+    </tr>
+    </tfoot>
+</table>
+<hr/>
+
+<h2>EXAMPLE TABLES</h2>
+<html>
+<head>
+    <title>Tables</title>
+</head>
+<body>
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th scope="col">Home starter hosting</th>
+            <th scope="col">Premium business hosting</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Disk space</th>
+            <td>250mb</td>
+            <td>1gb</td>
+        </tr>
+        <tr>
+            <th scope="row">Bandwidth</th>
+            <td>5gb per month</td>
+            <td>50gb per month</td>
+        </tr>
+        <tr>
+            <th scope="row">Email accounts</th>
+            <td>3</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <th scope="row">Server</th>
+            <td>Shared</td>
+            <td>VPS</td>
+        </tr>
+        <tr>
+            <th scope="row">Support</th>
+            <td>Email</td>
+            <td>Telephone and email</td>
+        </tr>
+        <tr>
+            <th scope="row">Setup</th>
+            <td>Free</td>
+            <td>Free</td>
+        </tr>
+        <tr>
+            <th scope="row">FTP accounts</th>
+            <td>1</td>
+            <td>5</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td></td>
+            <td colspan="2">Sign up now and save 10%!</td>
+        </tr>
+    </tfoot>
+</table>
+</body>
+</html>

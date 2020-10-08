@@ -1,0 +1,63 @@
+<h1><u>Chapter 9: FLASH, VIDEO, & AUDIO</u></h1>
+<h2>Adding videos to your Pages</h2>
+<video src="video/puppy.mp4"
+       poster="images/puppy.jpg"
+       width="400" height="300"
+       preload
+       controls>
+    <p>A video of a puppy playing in the snow</p>
+</video>
+<hr />
+
+<h2>Multiple Video Sources</h2>
+<video poster="images/puppy.jpg" width="400" height="320" preload controls loop>
+    <source src="video/puppy.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
+    <source src="video/puppy.webm" type='video/webm;codecs="vp8, vorbis"' />
+    <p>A video of a puppy playing in the snow</p>
+</video>
+
+<hr />
+
+<body>
+<audio src="audio/test-audio.ogg"
+       controls autoplay>
+    <p>This browser does not support our audio
+        format.</p>
+</audio>
+
+<hr />
+<audio controls autoplay>
+    <source src="audio/test-audio.ogg" />
+    <source src="audio/test-audio.mp3" />
+    <p>This browser does not support our audio
+        format.</p>
+</audio>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flash, Video and Audio</title>
+    <script type="text/javascript"
+            src="http://ajax.googleapis.com/ajax/libs/
+swfobject/2.2/swfobject.js"></script>
+    <script type="text/javascript">
+        var flashvars = {};
+        var params = {movie: "../video/puppy.flv"};
+        swfobject.embedSWF("flash/osplayer.swf", "snow",
+            "400", "320", "8.0.0", flashvars, params);</script>
+</head>
+<body>
+<video poster="images/puppy.jpg" width="400"
+       height="320" controls="controls">
+    <source src="video/puppy.mp4" type='video/mp4;
+codecs="avc1.42E01E, mp4a.40.2"' />
+    <source src="video/puppy.webm" type='video/webm;
+codecs="vp8, vorbis"' />
+    <div id="snow">
+        <p>You cannot see this video of a puppy playing
+            in the snow because this browser does not
+            support our video formats.</p>
+    </div>
+</video>
+</body>
+</html>
